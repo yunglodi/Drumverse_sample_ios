@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://drqp03sxxq87f"]
+
+[ext_resource type="Texture2D" uid="uid://blthkb5bwvrjb" path="res://Assets/Continue.png" id="1_mlwp0"]
+
+[node name="HitLine" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+texture = ExtResource("1_mlwp0")

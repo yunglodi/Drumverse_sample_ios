@@ -1,0 +1,169 @@
+[gd_scene load_steps=19 format=3 uid="uid://2ogpwbrbmfgl"]
+
+[ext_resource type="Script" uid="uid://yn2ct3n8pebr" path="res://Sample/sample_scene.gd" id="1_i6auh"]
+[ext_resource type="Material" uid="uid://dykh6lk1hfo2u" path="res://Menu Shaders/Asset_Color.tres" id="2_q6e57"]
+[ext_resource type="Texture2D" uid="uid://xab3sfadv3v" path="res://Menu Assets/cards/Lesson_Cards_001.png" id="3_bc8xi"]
+[ext_resource type="Texture2D" uid="uid://cfnmmrrwxo1xy" path="res://Menu Assets/cards/Lesson_Cards_002.png" id="4_c5e4c"]
+[ext_resource type="Texture2D" uid="uid://c7rxka2885mf4" path="res://Menu Assets/cards/Lesson_Cards_003.png" id="5_vw3n4"]
+[ext_resource type="Texture2D" uid="uid://cwy4mxak8ug2b" path="res://Menu Assets/cards/Lesson_Cards_004.png" id="6_gfxfq"]
+[ext_resource type="Texture2D" uid="uid://453k2lyklguq" path="res://Menu Assets/cards/Lesson_Cards_005.png" id="7_7e6jy"]
+[ext_resource type="Texture2D" uid="uid://c0630m7vl7ohs" path="res://Menu Assets/cards/Lesson_Cards_006.png" id="8_ynbi3"]
+[ext_resource type="Texture2D" uid="uid://csfjm8c4n3nsw" path="res://Menu Assets/cards/Lesson_Cards_007.png" id="9_ohsou"]
+[ext_resource type="Texture2D" uid="uid://d4cpyrtnriltd" path="res://Menu Assets/cards/Lesson_Cards_008.png" id="10_s5nky"]
+[ext_resource type="Texture2D" uid="uid://bk12hqlfhcuvm" path="res://Menu Assets/cards/Lesson_Cards_009.png" id="11_8h2tx"]
+[ext_resource type="Texture2D" uid="uid://dl6regabkjdu5" path="res://Menu Assets/cards/Lesson_Cards_010.png" id="12_h7fod"]
+[ext_resource type="Texture2D" uid="uid://dc25p1u0cw26f" path="res://Menu Assets/Learning.png" id="13_drgsa"]
+[ext_resource type="Texture2D" uid="uid://drgu4sp8onbd3" path="res://Menu Assets/Practice (2).png" id="14_eq3po"]
+[ext_resource type="Texture2D" uid="uid://ckgv8u4tqhqvq" path="res://Menu Assets/Challenge (1).png" id="15_dh22i"]
+[ext_resource type="Texture2D" uid="uid://r0x5i2s0vspc" path="res://Menu Assets/Selection Title.png" id="16_bc8xi"]
+[ext_resource type="Texture2D" uid="uid://cpd48g2put76u" path="res://Menu Assets/Back.png" id="17_c5e4c"]
+[ext_resource type="AudioStream" uid="uid://dk57nyfbj42mm" path="res://Audio/select_sound.wav" id="18_vw3n4"]
+
+[node name="ModeSelection" type="Node2D"]
+script = ExtResource("1_i6auh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -211.0
+offset_top = -82.0
+offset_right = 2068.0
+offset_bottom = 1107.0
+color = Color(1, 0.752941, 0.145098, 1)
+metadata/_edit_lock_ = true
+
+[node name="LearningButton" type="Button" parent="."]
+visible = false
+offset_left = 1134.0
+offset_top = 138.0
+offset_right = 1731.0
+offset_bottom = 287.0
+text = "Learning Mode"
+
+[node name="PracticeButton" type="Button" parent="."]
+visible = false
+offset_left = 1137.0
+offset_top = 464.0
+offset_right = 1719.0
+offset_bottom = 612.0
+text = "Practice Mode"
+
+[node name="ChallengeButton" type="Button" parent="."]
+visible = false
+offset_left = 1137.0
+offset_top = 828.0
+offset_right = 1732.0
+offset_bottom = 979.0
+text = "Challenge Mode"
+
+[node name="Lesson Container" type="VBoxContainer" parent="."]
+offset_left = -40.0
+offset_top = 99.0
+offset_bottom = 139.0
+scale = Vector2(0.623663, 0.623663)
+
+[node name="Lesson1" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("3_bc8xi")
+
+[node name="Lesson2" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("4_c5e4c")
+
+[node name="Lesson3" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("5_vw3n4")
+
+[node name="Lesson4" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("6_gfxfq")
+
+[node name="Lesson5" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("7_7e6jy")
+
+[node name="Lesson6" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("8_ynbi3")
+
+[node name="Lesson7" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("9_ohsou")
+
+[node name="Lesson8" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("10_s5nky")
+
+[node name="Lesson9" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("11_8h2tx")
+
+[node name="Lesson10" type="Sprite2D" parent="Lesson Container"]
+visible = false
+material = ExtResource("2_q6e57")
+position = Vector2(837.841, 822.27)
+texture = ExtResource("12_h7fod")
+
+[node name="Buttons Container" type="VBoxContainer" parent="."]
+offset_left = 962.0
+offset_top = 236.0
+offset_right = 1650.0
+offset_bottom = 764.0
+scale = Vector2(1.33986, 1.33986)
+
+[node name="Learning" type="TextureButton" parent="Buttons Container"]
+material = ExtResource("2_q6e57")
+layout_mode = 2
+texture_normal = ExtResource("13_drgsa")
+
+[node name="Practice" type="TextureButton" parent="Buttons Container"]
+material = ExtResource("2_q6e57")
+layout_mode = 2
+texture_normal = ExtResource("14_eq3po")
+
+[node name="Challenge" type="TextureButton" parent="Buttons Container"]
+material = ExtResource("2_q6e57")
+layout_mode = 2
+texture_normal = ExtResource("15_dh22i")
+
+[node name="SelectionTitle" type="VBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 592.0
+offset_right = 1454.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="TextureRect" type="TextureRect" parent="SelectionTitle"]
+material = ExtResource("2_q6e57")
+layout_mode = 2
+texture = ExtResource("16_bc8xi")
+
+[node name="Back" type="TouchScreenButton" parent="."]
+material = ExtResource("2_q6e57")
+position = Vector2(133, 45)
+scale = Vector2(0.554455, 0.554455)
+texture_normal = ExtResource("17_c5e4c")
+
+[node name="ClickSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_vw3n4")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

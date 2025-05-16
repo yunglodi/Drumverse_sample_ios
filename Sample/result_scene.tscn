@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6pflhre6rcb8"]
+
+[ext_resource type="Script" uid="uid://5rgubp0avbfk" path="res://Scenes/result_scene.gd" id="1_5omfn"]
+[ext_resource type="FontFile" uid="uid://bsdm1pj7st7rm" path="res://Font/Modular Amplitude.otf" id="2_wrphs"]
+[ext_resource type="AudioStream" uid="uid://dk57nyfbj42mm" path="res://Audio/select_sound.wav" id="3_wrphs"]
+
+[node name="ResultScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5omfn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -158.0
+offset_top = -62.0
+offset_right = 2178.0
+offset_bottom = 1179.0
+color = Color(1, 0.752941, 0.145098, 1)
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 299.0
+offset_top = 24.0
+offset_right = 1712.0
+offset_bottom = 1049.0
+theme_override_constants/separation = 90
+metadata/_edit_lock_ = true
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 100
+text = "Challenge Complete!"
+horizontal_alignment = 1
+
+[node name="HitsLabel" type="Label" parent="VBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 70
+text = "total Hits:"
+
+[node name="AccuracyLabel" type="Label" parent="VBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 70
+text = "Hit % :"
+
+[node name="MissesLabel" type="Label" parent="VBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 70
+text = "Miss:"
+
+[node name="GradeLabel" type="Label" parent="VBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 70
+text = "Grade: "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="MenuButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+modulate = Color(0.188235, 0.0862745, 0.0509804, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_wrphs")
+theme_override_font_sizes/font_size = 90
+text = "MAIN MENU"
+flat = true
+
+[node name="ClickSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wrphs")
